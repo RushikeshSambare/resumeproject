@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class=" mt-5">
+    <div class="text-center">
+    <img src="{% static 'core/img/rushi.png' %}" alt="profilephoto" 
+    class="img-thumbnail" width="250px" height="150px">
+</div>
+    <div class="text-white mt-5 mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello</h1>
+        <div class="px-4" style="line-height: 2rem;">
+            <p style="text-indent: 100px;"> Myself <b class="text-warning">Rushikesh Samabre.</b> Basically I am from Buldhana dist but currently living in pune. i have completed my diploma in 
+            Electrical Engineering from Government Polytechnic Jalgaon in 2019 after that i did 2 year in Mediaocean asia pvt Ltd. as a Junior Electrical Engineer.
+        now I pursuing <b class="text-warning"> My BTech in Electrical</b> Engineering from Godavari Collage of Engineering Jalgaon. I also pursuing  <b class="text-warning">Master in full stack developement </b> from I.T.Vedant Education Pvt Ltd. 
+       in which i completed full stack in Python and JAVA apart from that i also completed AWS from I.T.Vedant Education Pvt Ltd.  </p>
+        </div>
+    </div>
+    <div class="text-center">
+    <a href="{% url 'contact'%}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact'%}" class="btn btn-outline-info my-3 ">Contact</a>
+</div>
+</div>
+
+{% endblock content %}
+
